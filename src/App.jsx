@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+ import { useEffect, useState } from 'react'
 import { supabase } from './supabaseClient'
 
 export default function App() {
@@ -52,7 +52,7 @@ export default function App() {
       {/* CATEGORIES */}
       <div style={{ padding: '20px' }}>
         <h2 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '12px' }}>Digital Products</h2>
-        <p style={{ color: '#666', fontSize: '14px', marginBottom: '20px' }}>+ $1230.00</p>
+        <p style={{ color: '#666', fontSize: '14px', marginBottom: '20px' }}>+ $1,230.00</p>
         
         <h2 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '12px' }}>Physical Goods</h2>
         <p style={{ color: '#666', fontSize: '14px', marginBottom: '20px' }}>+ $60.00</p>
@@ -98,7 +98,7 @@ export default function App() {
                 {product.description}
               </p>
               <p style={{ margin: 0, fontSize: '16px', fontWeight: '700', color: '#4F46E5' }}>
-                + ₦{product.price?.toLocaleString()}
+                ${product.price?.toLocaleString()}
               </p>
             </div>
 
